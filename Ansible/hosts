@@ -1,0 +1,14 @@
+[jenkins-master]
+<private_ip>
+
+[jenkins-master:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/opt/keypair_nv.pem
+
+[jenkins-node]
+<private_ip>
+
+
+[jenkins-node:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/opt/keypair_nv.pem
